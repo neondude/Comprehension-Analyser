@@ -37,8 +37,7 @@
 # wordDefine.py
 >* program to return a list of definitions for the given word if available
 >### example
-
-
-    python wordDefine.py
-    enter a word: hello
-    an expression of greeting
+>
+        python wordDefine.py
+        enter a word: hello
+        an expression of greeting
