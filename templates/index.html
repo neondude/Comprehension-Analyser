@@ -1,0 +1,54 @@
+{% extends "layout.html" %}
+{%block head %}
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+    });
+    var noWords = {{paras.nofwords | safe}}
+    var urlQues = "{{paras.url |safe}}"
+    
+</script>
+<script type="text/javascript" src="{{ url_for('static', filename='Main.js') }}"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='default.css') }}" />
+
+
+{% endblock %}
+{% block body %}
+<h1>Comprehension Analyser</h1>
+<button onclick="beginTest()" id="startBtn">Begin Test</button>
+
+<div class="tabs" id="testView">
+
+  
+  <div class="tab">
+    <input class="tab-radio" type="radio" id="tab-passage" name="tab-group-1" onclick="">
+    <label class="tab-label" for="tab-passage" id="tab-label-passage">PASSAGE (00:00)</label>
+    
+    <div class="tab-panel">
+      <div class="tab-content">
+        <div id="paraset">{{paras.para | safe}}</div>
+        </div>
+    </div> 
+  </div>
+    <div class="tab">
+    <input class="tab-radio" type="radio" id="tab-ques" name="tab-group-1" >
+    <label class="tab-label" for="tab-ques" id="tab-label-ques">QUESTIONS (00:00)</label>
+    
+    <div class="tab-panel">
+      <div class="tab-content">
+          <form name="QuesContain" class="testset">
+                <div id="quesset"></div>
+            </form>
+
+        </div>
+    </div> 
+  </div>
+  
+</div>
+
+<button onclick="evalQues()" id="submitBtn">SUBMIT</button>
+
+<div id="result"></div>
+
+
+{% endblock %}
