@@ -13,6 +13,7 @@
     nltk.download() 
 >* select **CORPA** tab
 >* select **wordnet** and download
+
 ## 3)Browser
 #### - Chrome recommended
 # Instructions
@@ -36,6 +37,7 @@
 # wordDefine.py
 >>* program to return a list of definitions for the given word if available
 >### example
+
 
     python wordDefine.py
     enter a word: hello
