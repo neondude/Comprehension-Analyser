@@ -35,7 +35,7 @@
 >>* retruns the given passage in html format where each word whose definition, if available, is contained within 'a' tag with **bootstrap popover attribute** containing the definitions.
 
 # wordDefine.py
->>* program to return a list of definitions for the given word if available
+>* program to return a list of definitions for the given word if available
 >### example
 
 
