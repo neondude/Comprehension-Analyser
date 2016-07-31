@@ -20,9 +20,9 @@
 - Run **app.py** 
 - Start your browser and open **http://localhost:5000/1**
 - Click **Begin Test** to start the test
-- Read the passage and click the **questions** tab to answer the questions related to the passage
+- Read the passage and click the **QUESTIONS** tab to answer the questions related to the passage
 - To view the definition of a word hover over the word and if definition is available the word will he highlighted. Click to view definition
-- Click Submit once you've answered all your questions to view your **score** and **reading speed**
+- Click **Submit** once you've answered all your questions to view your **score** and **reading speed**
 
 # Descriptions
 # wordnet
@@ -30,8 +30,7 @@
 >- Learn more at [Wordnet Princeton](https://wordnet.princeton.edu/)
 
 # ParaCompile.py
->### ParaCompile(string) 
->>* used to compile a html format passage with definitions contained in **bootstrap popover attribute**
+>### ParaCompile(string)
 >>* retruns the given passage in html format where each word whose definition, if available, is contained within 'a' tag with **bootstrap popover attribute** containing the definitions.
 
 # wordDefine.py
